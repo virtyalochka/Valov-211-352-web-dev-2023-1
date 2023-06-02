@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1 class="mt-5 text-center">Об авторе</h1>
+<div class="row">
+    <div class="col-md-4 mb-3">
+        <img class="avatar" src="{{ url_for('static', filename='images/avatar1.jpg') }}" alt="Author">
+    </div>
+    <div class="col-md-8 text-justify d-flex align-items-center">
+        <p>
+            Доброго времени суток, меня зовут Валов Алексей Васильевич, и я
+            являюсь студентом группы 211-352. В данном семестре у нас есть
+            очень интересный предмет, который называется "Разработка веб-приложений".
+            Я этому очень рад, ведь веб-разработка является очень интересной темой,
+            поэтому я постараюсь делать все задания вовремя, и главное - сам!
+        </p>
+    </div>
+</div>
+{% endblock %}
